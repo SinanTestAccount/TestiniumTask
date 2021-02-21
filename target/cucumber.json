@@ -1,0 +1,198 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 15074551000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user should open login page",
+            "match": {
+              "location": "stepdefinitions.LoginStepDefinition.user_should_open_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5484422000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user should enter valid credentials",
+            "match": {
+              "location": "stepdefinitions.LoginStepDefinition.user_should_enter_valid_credentials()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 147019000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "should see main page and verify",
+            "match": {
+              "location": "stepdefinitions.LoginStepDefinition.should_see_main_page_and_verify()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-21T14:52:50.169Z",
+        "before": [
+          {
+            "result": {
+              "duration": 182719000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hook.setUp()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "As a user, I should be able to search a product",
+        "description": "",
+        "id": "main;as-a-user--i-should-be-able-to-search-a-product",
+        "after": [
+          {
+            "result": {
+              "duration": 316197000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hook.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5289864000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Go to searchbar and type \"bilgisayar\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"bilgisayar\"",
+                  "offset": 25
+                }
+              ],
+              "location": "stepdefinitions.MainStepDefinition.go_to_searchbar_and_type(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 12217499000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User should go to second page and verify",
+            "match": {
+              "location": "stepdefinitions.ProductListStepDefinition.user_should_go_to_second_page_and_verify()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2733451000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User should select a random product",
+            "match": {
+              "location": "stepdefinitions.ProductListStepDefinition.user_should_select_a_random_product()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 79770000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Selected product\u0027s description and price should stored as txt file",
+            "match": {
+              "location": "stepdefinitions.ProductListStepDefinition.selected_product_s_description_and_price_should_stored_as_txt_file()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9602857000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User should add selected product to basket",
+            "match": {
+              "location": "stepdefinitions.ProductListStepDefinition.user_should_add_selected_product_to_basket()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 454615000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Verify that product price and product price in basket",
+            "match": {
+              "location": "stepdefinitions.BasketStepDefinition.verify_that_product_price_and_product_price_in_basket()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3296529000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Increase product amount and verify",
+            "match": {
+              "location": "stepdefinitions.BasketStepDefinition.increase_product_amount_and_verify()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9125415000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Delete product from basket and verify basket is free",
+            "match": {
+              "location": "stepdefinitions.BasketStepDefinition.delete_product_from_basket_and_verify_basket_is_free()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "Main",
+    "description": "",
+    "id": "main",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/main.feature",
+    "tags": []
+  }
+]
